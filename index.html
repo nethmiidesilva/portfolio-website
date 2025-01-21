@@ -31,7 +31,7 @@
 
             <ul class="nav__list">
                <li class="nav__item">
-                  <a href="#home" class="nav__link">Home</a>
+                  <a href="#home" class="nav__link active-link">Home</a>
                </li>
                <li class="nav__item">
                   <a href="#about" class="nav__link">About Me</a>
@@ -43,7 +43,7 @@
                   <a href="#blogs" class="nav__link">Blogs</a>
                </li>
                <li class="nav__item">
-                  <a href="#contact" class="nav__link">Contact Me</a>
+                  <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
                </li>
 
             </ul>
@@ -55,6 +55,9 @@
          </div>
 
          <div class="nav__buttons">
+            <!--THEME BUTTON-->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
             <!--Toggle Button-->
             <div class="nav__toggle" id="nav-toggle">
                <i class="ri-menu-4-line"></i>
@@ -455,22 +458,22 @@
                         <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
                         <label for="name" class="contact__label">First Name</label>
                      </div>
-                  </div>
-                  <div class="contact__box">
-                     <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                     <label for="email" class="contact__label">Email Address</label>
-                  </div>
+                  
+                     <div class="contact__box">
+                        <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                        <label for="email" class="contact__label">Email Address</label>
+                     </div>
+                     </div>
+                     <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                     </div>
 
-                  <div class="contact__box">
-                     <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                     <label for="subject" class="contact__label">Subject</label>
-                  </div>
-
-                  <div class="contact__box contact__area">
-                     <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
-                     <label for="message" class="contact__label">Message</label>
-                  </div>
-
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                     </div>
+                  
                   <p class="contact__message" id="contact-message"></p>
 
                   <button type="submit" class="contact__button button">
@@ -538,8 +541,11 @@
    </footer>
 
    <!--=================SCROLL UP========================-->
-
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+   </a>
    <!--================SCROLLREVEAL-->
+   <script src="assets/js/scrollreveal.min.js"></script>
 
    <!--===================EMAIL JS=========================-->
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
