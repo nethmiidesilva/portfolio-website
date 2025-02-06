@@ -137,3 +137,23 @@ const sr = ScrollReveal({
 sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
 sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data', {origin: 'left'})
 sr.reveal('.projects__card', {interval: 100})
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const achievementCards = document.querySelectorAll(".achievement__card");
+
+    function revealOnScroll() {
+        achievementCards.forEach((card) => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.85) { 
+                card.classList.add("show");
+            } else {
+                card.classList.remove("show"); // Remove this line if you want it to appear only once
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Run on page load in case elements are already in view
+});
