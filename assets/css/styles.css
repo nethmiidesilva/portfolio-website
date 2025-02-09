@@ -443,11 +443,12 @@ body.dark-theme{
 .home__arrow{
   left: 40%;
   bottom: -4rem;
+  transform: translate(-40px, -35px) !important;
 }
 
 .home__line{
-  right: -2rem;
-  bottom: -.5rem;
+  right: -2.5rem;
+  bottom: -5.5rem !important;
 }
 
 .home__perfil .geometric-box{
