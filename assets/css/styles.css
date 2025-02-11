@@ -472,6 +472,8 @@ body.dark-theme{
   color: var(--white-color);
   font-size: 1.25rem;
   padding: 6px;
+  width: 40px;  /* Ensures square shape */
+  height: 40px;
   place-items: center;
   display: flex; 
   justify-content: center;
