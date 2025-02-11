@@ -1171,6 +1171,15 @@ body.dark-theme .achievement__link:active {
     width: 180px;
   }
 
+  .home__social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home__social-link i {
+    font-size: 1.2rem;
+  }
+
   .about__image{
     width: 180px;
   }
@@ -1196,6 +1205,15 @@ body.dark-theme .achievement__link:active {
   .projects__container{
     grid-template-columns: 350px;
     justify-content: center;
+  }
+
+  .home__social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home__social-link i {
+    font-size: 1.2rem;
   }
 
   .contact__data{
