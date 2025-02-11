@@ -463,8 +463,9 @@ body.dark-theme{
   top: 0;
   bottom: 0;
   margin: auto 0;
-  display: grid;
-  row-gap: 0.3rem;
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 5px; /* Adjust spacing */
 }
 
 .home__social-link{
